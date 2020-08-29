@@ -11,16 +11,10 @@ sat = turtle.Turtle()
 sat.pencolor("red")
 
 # draw the pentagon
-sat.forward(50)
-sat.left(72)
-sat.forward(50)
-sat.left(72)
-sat.forward(50)
-sat.left(72)
-sat.forward(50)
-sat.left(72)
-sat.forward(50)
-sat.left(72)
+for i in range(5):
+    sat.forward(50)
+    sat.left(72)
+
 
 # keep the turtle window open until we click on it
 turtle_window = turtle.Screen()
