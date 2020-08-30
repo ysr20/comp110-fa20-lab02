@@ -9,13 +9,14 @@ import turtle
 # create a turtle and set the pen color
 duzzy = turtle.Turtle()
 duzzy.pencolor("red")
-
-# PUT YOUR NEW CODE HERE
-sides_number=input(int("Choose number of sides: "))
-sides_length=input(int("Choose length of sides: "))
-for i in range(sides_number):
-    duzzy.forward(sides_length)
-    duzzy.left(72)
+# asks user for the length of the pentagon
+go_forward=int(input("Enter a length for the pentagon: "))
+#asks user for number of sides in polygon
+side_number=int(input("Choose number of sides: "))
+#draw polygon
+for i in range(side_number):
+    duzzy.forward(go_forward)
+    duzzy.left(360/side_number)
 
 # keep the turtle window open until we click on it
 turtle_window = turtle.Screen()
